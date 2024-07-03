@@ -36,8 +36,8 @@ jobs:
         run: mix coveralls.html
     services:
       pg:
-        image: postgres:12
-        port: ['5432:5432']
+        image: postgres
+        ports: ['5432:5432']
         env:
           POSTGRES_PASSWORD: postgres
         options: >-
