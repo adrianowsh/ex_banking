@@ -52,7 +52,8 @@ defmodule ExBanking.MixProject do
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.18.1", only: :test},
       {:sobelow, "~> 0.13.0", only: :dev},
-      {:dialyxir, "~> 1.4.3", only: [:dev], runtime: false}
+      {:dialyxir, "~> 1.4.3", only: [:dev], runtime: false},
+      {:argon2_elixir, "~> 4.0"}
     ]
   end
 
