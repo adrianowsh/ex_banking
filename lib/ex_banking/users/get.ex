@@ -3,6 +3,9 @@ defmodule ExBanking.Users.Get do
   alias ExBanking.Repo
 
   def call(id) do
-    User |> Repo.get(id)
+    case Repo.get(User, id) do
+      nil -> {:error, :not_found}
+      user -> {:ok, user}
+    end
   end
 end

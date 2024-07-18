@@ -21,7 +21,23 @@ defmodule ExBankingWeb.UserController do
   end
 
   def show(conn, %{"id" => id}) do
-    user = Users.get_user(id)
-    render(conn, :show, user: user)
+    with {:ok, user} <- Users.get_user(id) do
+      conn
+      |> render(:show, user: user)
+    end
+  end
+
+  def update(conn, %{"id" => id, "user" => user_params}) do
+    with {:ok, user} <- Users.get_user(id),
+         {:ok, %User{} = user} <- Users.update_user(user, user_params) do
+      render(conn, :show, user: user)
+    end
+  end
+
+  def delete(conn, %{"id" => id}) do
+    with {:ok, user} <- Users.get_user(id),
+         {:ok, %User{}} <- Users.delete_user(user) do
+      send_resp(conn, :no_content, "")
+    end
   end
 end
