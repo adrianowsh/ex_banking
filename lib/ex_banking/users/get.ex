@@ -1,6 +1,6 @@
 defmodule ExBanking.Users.Get do
-  alias ExBanking.Users.User
   alias ExBanking.Repo
+  alias ExBanking.Users.User
 
   def call(id) do
     case Repo.get(User, id) do

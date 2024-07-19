@@ -68,10 +68,6 @@ defmodule ExBankingWeb.UserControllerTest do
     test "deletes chosen user", %{conn: conn, user: %User{id: id}} do
       conn = delete(conn, ~p"/api/users/#{id}")
       assert response(conn, 204)
-
-      # assert_error_sent 404, fn ->
-      #   get(conn, ~p"/api/users/#{id}")
-      # end
     end
   end
 

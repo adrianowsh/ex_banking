@@ -1,9 +1,9 @@
 defmodule ExBanking.Users do
-  alias ExBanking.Users.Delete
-  alias ExBanking.Users.Update
-  alias ExBanking.Users.Paginate
-  alias ExBanking.Users.Get
   alias ExBanking.Users.Create
+  alias ExBanking.Users.Delete
+  alias ExBanking.Users.Get
+  alias ExBanking.Users.Paginate
+  alias ExBanking.Users.Update
 
   defdelegate create_user(params), to: Create, as: :call
   defdelegate get_user(id), to: Get, as: :call

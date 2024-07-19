@@ -1,6 +1,6 @@
 defmodule ExBanking.Users.Paginate do
-  alias ExBanking.Users.User
   alias ExBanking.Repo
+  alias ExBanking.Users.User
 
   def call(_param) do
     User

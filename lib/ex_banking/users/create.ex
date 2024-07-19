@@ -1,7 +1,6 @@
 defmodule ExBanking.Users.Create do
-  alias Hex.API.User
-  alias ExBanking.Users.User
   alias ExBanking.Repo
+  alias ExBanking.Users.User
 
   def call(params) do
     params
