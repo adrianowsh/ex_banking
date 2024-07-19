@@ -1,7 +1,7 @@
 # ExBanking
 ![Test](https://github.com/adrianowsh/ex_banking/actions/workflows/tests.yml/badge.svg)
 ![Dialyzer](https://github.com/adrianowsh/ex_banking/actions/workflows/dialyzer.yml/badge.svg)
-![Format](https://github.com/adrianowsh/ex_banking/actions/workflows/fornat.yml/badge.svg)
+![Format](https://github.com/adrianowsh/ex_banking/actions/workflows/format.yml/badge.svg)
 ![Lint](https://github.com/adrianowsh/ex_banking/actions/workflows/lint.yml/badge.svg)
 ![Security](https://github.com/adrianowsh/ex_banking/actions/workflows/security.yml/badge.svg)
 
